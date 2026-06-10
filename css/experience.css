@@ -115,14 +115,7 @@ button{
 .page-wrapper{
     display:flex;
     justify-content:flex-start;
-    align-items:flex-start;
     gap:20px;
-}
-
-.page-wrapper{
-    display:flex;
-    justify-content:flex-start;
-    gap:10px;
 }
 
 .lacester{
@@ -229,7 +222,7 @@ button{
 }
 
 .bandpic{
-    cursor:url('cursor/button.cur'), pointer;
+    cursor:url('../cursor/button.cur'), pointer;
     transition:0.3s;
 }
 
@@ -411,7 +404,7 @@ footer{
     border-radius:30px;
 
     padding:15px 25px;
-    cursor:url('cursor/button.cur'), pointer;
+    cursor:url('../cursor/button.cur'), pointer;
 
     display:block;
     margin:20px auto;
