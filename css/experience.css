@@ -92,7 +92,6 @@ button{
     margin:10px auto 20px;
 }
 
-
 .lacester{
     position:relative;
 
@@ -100,7 +99,9 @@ button{
     min-height:981px;
 
     padding:10px;
-    margin:0 auto;
+
+    /* move it left with small gap */
+    margin:0 0 0 20px;
 
     background:url('../image/bluepolkadot.jpg');
     background-size:200px;
@@ -110,10 +111,6 @@ button{
     border-image-outset:17px;
 
     filter:drop-shadow(4px 4px 6px rgba(0,0,0,0.4));
-}
-
-.lacester{
-    margin-left:40px;
 }
 
 
