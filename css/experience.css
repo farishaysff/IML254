@@ -337,18 +337,6 @@ video{
 
 }
 
-body{
-    margin:0;
-    padding:20px;
-
-    font-family:'Comfortaa', sans-serif;
-
-    background:url('../image/background.jpg');
-    background-size:400px;
-
-    cursor:url('../cursor/cursor.cur'), auto;
-}
-
 .page-wrapper{
     display:flex;
     align-items:flex-start;
@@ -389,7 +377,7 @@ footer{
     border-radius:30px;
 
     padding:15px 25px;
-    cursor:url('cursor/button.cur'), pointer;
+    cursor:url('../cursor/button.cur'), pointer;
 
     display:block;
     margin:20px auto;
