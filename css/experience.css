@@ -1,7 +1,11 @@
 body{
     margin:0;
     padding:20px;
-    
+
+    display:flex;
+    align-items:flex-start;
+    gap:30px;
+
     font-family:'Comfortaa', sans-serif;
 
     background:url('../image/background.jpg');
