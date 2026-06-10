@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+<title>Bits of Me!</title>
+
+<link rel="stylesheet" href="css/about.css">
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- SIDEBAR (FIXED) -->
+    <div class="sidebar">
+
+        <h3>✦ Navigate ✦</h3>
+
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">🌸 Bits of Me</a>
+        <a href="education.html">🎓 Education</a>
+        <a href="experience.html">🎀 Experience</a>
+        <a href="family.html">👨‍👩‍👧 Family</a>
+        <a href="enthusiast.html">🧸 Enthusiast</a>
+        <a href="gallery.html">💌 Galeria</a>
+
+        <img src="video/chiikawa.gif" class="gif1">
+        <img src="video/usagi.gif" class="gif2">
+        <img src="video/momonga.gif" class="gif3">
+        <img src="video/usagi2.gif" class="gif4">
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <div class="lacester">
+
+            <img src="video/bunny.gif" class="cornergif">
+
+            <div class="header">
+
+                <a href="index.html">
+                    <img src="image/logoeraser.png" class="logo">
+                </a>
+
+                <h1>𓇼˚꒰ა Bits of Me 🌸໒꒱‧₊˚𓇼</h1>
+
+            </div>
+
+            <!-- ABOUT BOX -->
+            <div class="aboutbox">
+
+                <img src="image/aboutme.jpg" class="aboutpic" onclick="heartPop()">
+
+                <table class="profiletable">
+
+                    <tr>
+                        <td><b>Name</b></td>
+                        <td>Nur Damia Farisha binti Mohd Yusoff</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Age</b></td>
+                        <td>20</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Date of Birth</b></td>
+                        <td>20.01.2006</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Place of Birth</b></td>
+                        <td>Hospital Pusrawi, Kuala Lumpur</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Place of Study</b></td>
+                        <td>UiTM Kedah</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <!-- INTRO -->
+            <div class="factbox">
+
+                <h2>🌷 Introduction 🌷</h2>
+
+                <p>
+                    Hello! My name is Farisha or people would call me “Mia” or “Fari”.
+                    I am currently studying Diploma in Library Informatics at UiTM Kedah.  I'm on my fourth semester and I have only one more semester left until I close my diploma journey with an epilogue. I love indulging myself into music and daydreaming.
+                </p>
+
+            </div>
+
+            <!-- FACTS -->
+            <div class="factbox">
+
+                <h2>✨ 4 Interesting Facts About Me ✨</h2>
+
+                <ol>
+                   <li>💐 I'm originally from Kuala Lumpur, but I grew up at Penang and now currently residing at Kuantan, Pahang.</li>
+    <li>🌟 I have watched over 240 animes.</li>
+    <li> 🎵 My hands, breath and mind are skilled by playing the clarinet, I can play spontaneously in just one listen.</li>
+    <li>🧕Though I'm the youngest, I'm taller than my older sister 😎.</li>
+                </ol>
+
+            </div>
+
+            <!-- SOCIAL -->
+            <div class="factbox">
+
+                <h2>🌸 Find Me Online 🌸</h2>
+
+                <button class="moodbtn" onclick="showSocial()">
+                    💖 Reveal My Socials 💖
+                </button>
+
+                <div id="socialBox" style="display:none; margin-top:20px; text-align:center;">
+
+                    <p>📷 Instagram:
+                        <a href="https://www.instagram.com/aaeyrin?utm_source=qr&igsh=dWRnZGJrd3pwY3Vl" target="_blank" class="social-link">@aaeyrin</a>
+                    </p>
+
+                    <p>🎵 TikTok:<a href="https://www.tiktok.com/@chwrylsle?_r=1&_t=ZS-975tKStjDin" target="_blank" class="social-link">@chwrylsle</a>
+                    </p>
+
+                    <p>💌 Email:
+                        <a href="mailto:miyaaysff@gmail.com" class="social-link">miyaaysff@gmail.com</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- MOOD -->
+            <h2>🌷 How Are You Today? 🌷</h2>
+
+            <div class="moodbox">
+
+                <button class="moodbtn" onclick="mood('😊 Happy')">🌸 Happy</button>
+                <button class="moodbtn" onclick="mood('😴 Sleepy')">☁️ Sleepy</button>
+                <button class="moodbtn" onclick="mood('🎵 Vibing')">🎵 Music</button>
+                <button class="moodbtn" onclick="mood('🧸 Cozy')">🧸 Cozy</button>
+
+            </div>
+
+            <p id="moodText" class="moodresult">Click a mood! ♡</p>
+
+            <!-- FOOTER INSIDE BORDER -->
+            <footer>
+                © 2026 Farisha's Digital Space | IML Project
+            </footer>
+
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<script>
+function showSocial(){
+
+    let box =
+    document.getElementById("socialBox");
+
+    if(box.style.display === "none"){
+        box.style.display = "block";
+
+        for(let i = 0; i < 15; i++){
+
+            let flower =
+            document.createElement("div");
+
+            flower.innerHTML = "🌸";
+
+            flower.style.position = "fixed";
+            flower.style.left =
+                Math.random() * window.innerWidth + "px";
+
+            flower.style.top = "80%";
+            flower.style.fontSize = "25px";
+            flower.style.zIndex = "9999";
+
+            document.body.appendChild(flower);
+
+            flower.animate(
+            [
+                {transform:"translateY(0)",opacity:1},
+                {transform:"translateY(-200px)",opacity:0}
+            ],
+            {
+                duration:1500
+            });
+
+            setTimeout(()=>{
+                flower.remove();
+            },1500);
+        }
+
+    }else{
+        box.style.display = "none";
+    }
+}
+</script>
+
+<script>
+function heartPop(){
+    let heart = document.createElement("div");
+
+    heart.innerHTML = "💖";
+    heart.style.position = "fixed";
+    heart.style.left = "50%";
+    heart.style.top = "40%";
+    heart.style.fontSize = "40px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },1000);
+}
+</script>
+
+
+<script>
+
+function mood(text){
+
+    document.getElementById("moodText").innerHTML =
+    "💖 Current Mood: " + text + " 💖";
+
+}
+
+</script>
+
+</body>
+</html>

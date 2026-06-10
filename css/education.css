@@ -1,0 +1,386 @@
+/* =========================================
+   1. GLOBAL SETTINGS
+========================================= */
+
+body{
+    margin:0;
+    padding:20px;
+
+    display:flex;
+    align-items:flex-start;
+    gap:22px;
+
+    font-family:'Comfortaa', sans-serif;
+
+    background:url('../image/background.jpg');
+    background-size:400px;
+
+    cursor:url('../cursor/cursor.cur'), auto;
+}
+
+a{
+    cursor:url('../cursor/pointer.cur'), pointer;
+}
+
+button{
+    cursor:url('../cursor/button.cur'), pointer;
+}
+
+/* =========================================
+   2. SIDEBAR
+========================================= */
+
+.sidebar{
+    width:180px;
+
+    background:#fff8fd;
+    border:3px solid #ffd6ec;
+    border-radius:20px;
+
+    padding:12px;
+
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+
+    height:fit-content;
+}
+
+.sidebar h3{
+    text-align:center;
+    color:#d98ac9;
+}
+
+.sidebar a{
+    display:block;
+
+    padding:10px;
+    margin-bottom:6px;
+
+    text-align:center;
+    text-decoration:none;
+    font-weight:bold;
+
+    color:#c27ac0;
+    background:#f8eaff;
+
+    border-radius:12px;
+
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#ffd6ec;
+    transform:scale(1.05);
+}
+
+/* Sidebar GIFs */
+
+.gif1{
+    width:80px;
+    display:block;
+    margin:20px auto 10px;
+}
+
+.gif2{
+    width:70px;
+    display:block;
+    margin:10px auto;
+}
+.gif3{
+    width:75px;
+    display:block;
+    margin:10px auto 20px auto;
+}
+
+.gif4{
+    width:75px;
+    display:block;
+    margin:10px auto 20px;
+}
+
+/* =========================================
+   3. MAIN LACE CONTAINER
+========================================= */
+
+.lacester{
+    position:relative;
+
+    width:880px;
+    min-height:981px;
+
+    padding:10px;
+    margin:0 auto;
+
+    background:url('../image/bluepolkadot.jpg');
+    background-size:200px;
+
+    border:37px solid transparent;
+    border-image:url('../image/laceborder.png') 13 fill round;
+    border-image-outset:17px;
+
+    filter:drop-shadow(4px 4px 6px rgba(0,0,0,0.4));
+}
+
+/* =========================================
+   4. HEADER
+========================================= */
+
+.header h1{
+    margin:0;
+
+    text-align:center;
+
+    font-family:'Fredoka', sans-serif;
+    color:#ff66b2;
+
+    text-shadow:2px 2px #ffffff;
+}
+
+.logo{
+    display:block;
+    width:250px;
+    margin:0 auto;
+}
+
+.cornergif{
+    position:absolute;
+    top:20px;
+    right:20px;
+
+    width:80px;
+}
+
+/* =========================================
+   5. SCHOOL BOXES
+========================================= */
+
+.school-box{
+    position:relative;
+
+    width:80%;
+    margin:20px auto;
+
+    background:#fff8fd;
+
+    border:5px solid transparent;
+    border-radius:25px;
+
+    background-image:
+        linear-gradient(#fff8fd,#fff8fd),
+        linear-gradient(
+            45deg,
+            #ffd6ec,
+            #e5c6ff,
+            #cfe2ff,
+            #ffd6ec
+        );
+
+    background-origin:border-box;
+    background-clip:padding-box,border-box;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 0 15px rgba(255,214,236,0.5);
+
+    transition:0.3s;
+}
+
+.school-box:hover{
+    transform:translateY(-3px);
+}
+
+.school-box::before{
+    content:"✦";
+
+    position:absolute;
+    top:10px;
+    right:15px;
+
+    font-size:22px;
+    color:#ff66b2;
+}
+
+/* =========================================
+   6. SCHOOL HEADER
+========================================= */
+
+.school-header{
+    text-align:center;
+    padding:20px;
+
+    cursor:url('../cursor/button.cur'), pointer;
+}
+
+.school-header h2{
+    margin:0;
+
+    color:#5b6fcf;
+
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+
+    border-right:3px solid #ff66b2;
+
+    animation:
+        wipeText 3s steps(30,end) forwards,
+        blinkCursor 0.8s infinite;
+}
+
+.arrow{
+    display:block;
+
+    margin-top:10px;
+
+    font-size:24px;
+    color:#ff66b2;
+}
+
+@keyframes wipeText{
+    from{
+        max-width:0;
+    }
+
+    to{
+        max-width:500px;
+    }
+}
+
+@keyframes blinkCursor{
+    0%,50%{
+        border-color:#ff66b2;
+    }
+
+    51%,100%{
+        border-color:transparent;
+    }
+}
+
+/* =========================================
+   7. SCHOOL CONTENT
+========================================= */
+
+.school-content{
+    display:none;
+
+    padding:20px;
+
+    text-align:center;
+}
+
+.school-content.show{
+    display:block;
+}
+
+.school-logo{
+    width:180px;
+    margin-bottom:15px;
+}
+
+.school-content p{
+    color:#555;
+    line-height:1.9;
+
+    margin:15px 0;
+    padding:0 20px;
+}
+
+/* =========================================
+   8. FACT BOX
+========================================= */
+
+.factbox{
+    width:70%;
+
+    margin:20px auto;
+    padding:15px;
+
+    background:white;
+
+    border:3px solid #ffd6ec;
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+        0 0 10px rgba(255,182,193,0.4);
+}
+
+.factbox h2{
+    color:#ff66b2;
+    margin-top:0;
+}
+
+#factText{
+    color:#555;
+    line-height:1.8;
+}
+
+/* =========================================
+   9. BUTTONS
+========================================= */
+
+.factbtn{
+    background:#ffd6ec;
+    color:#c27ac0;
+
+    border:none;
+    border-radius:15px;
+
+    padding:12px 20px;
+
+    font-family:'Comfortaa', sans-serif;
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.factbtn:hover{
+    transform:scale(1.05);
+
+    box-shadow:
+        0 0 10px #ffd6ec,
+        0 0 20px #ffd6ec;
+}
+
+/* =========================================
+   10. LINKS
+========================================= */
+
+.school-content a:link{
+    color:#ff66b2;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.school-content a:visited{
+    color:#9370db;
+}
+
+.school-content a:hover{
+    color:#ff1493;
+    text-decoration:underline;
+}
+
+.school-content a:active{
+    color:#ff69b4;
+}
+
+/* =========================================
+   11. FOOTER
+========================================= */
+
+footer{
+    width:100%;
+
+    margin-top:30px;
+    padding:15px 0;
+
+    text-align:center;
+    font-weight:bold;
+
+    color:#c27ac0;
+    background:#ffe6f4;
+
+    border-top:3px solid #ffd6ec;
+}

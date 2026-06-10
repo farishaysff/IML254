@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+     <title>My Family</title>
+
+<!-- Cute Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/family.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h3>✦ Navigate ✦</h3>
+
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">🌸 Bits of Me</a>
+    <a href="education.html">🎓 Education</a>
+    <a href="experience.html">🎀 Experience</a>
+    <a href="family.html">👨‍👩‍👧 Family</a>
+    <a href="enthusiast.html">🧸 Enthusiast</a>
+    <a href="gallery.html">💌 Galeria</a>
+
+<img src="video/chiikawa.gif" class="gif1">
+<img src="video/usagi.gif" class="gif2">
+<img src="video/momonga.gif" class="gif3">
+<img src="video/usagi2.gif" class="gif4">
+
+
+</div>
+
+<div class="lacester">
+
+    <img src="video/bunny.gif" class="cornergif">
+
+    <div class="header">
+
+    <a href="index.html">
+    <img src="image/logoeraser.png" class="logo"></a>
+
+<div class="factbox">
+
+<h1> ˗ˏˋ꒰┆┆My Family 👨‍👩‍👧┆┆꒱ˎˊ˗</h1>
+
+<p>
+Family, tied by blood and love. My parents pour their love for me and my siblings endlessly, which makes my life filled with sparks of joy, even when I'm having a tough time, without their encouragement, I wouldn't be strong to face my life obstacle. I also have 2 older sisters above me. I love to annoy them a lot and we would share our clothes and makeup stuffs together. </p>
+
+<div class="gallery-note">
+💖 Welcome to my family album! 💖
+</div>
+
+<div class="gallery-note">
+    ✨ Click any photo to enlarge it and view its caption! ✨
+</div>
+
+<div class="familygallery">
+
+    <img src="image/familyraya.jpg" onclick="openLightbox(0)">
+    <img src="image/umiraya.jpg" onclick="openLightbox(1)">
+    <img src="image/papa.jpg" onclick="openLightbox(2)">
+    <img src="image/kids.jpg" onclick="openLightbox(3)">
+    <img src="image/umikecik.jpg" onclick="openLightbox(4)">
+    <img src="image/kakepink.jpg" onclick="openLightbox(5)">
+
+</div>
+
+<div class="lightbox" id="lightbox">
+
+    <span class="close" onclick="closeLightbox()">&times;</span>
+
+    <span class="prev" onclick="changeSlide(-1)">❮</span>
+
+    <img id="lightbox-img">
+
+    <span class="next" onclick="changeSlide(1)">❯</span>
+
+    <div id="caption" class="caption"></div>
+
+</div>
+
+</div> <!-- lacester -->
+
+<script>
+
+let currentImage = 0;
+
+const images = [
+
+    "image/familyraya.jpg",
+    "image/umiraya.jpg",
+    "image/papa.jpg",
+    "image/kids.jpg",
+    "image/umikecik.jpg",
+    "image/kakepink.jpg"
+
+];
+
+const captions = [
+
+    "2026 Hari Raya photoshoot with my mother, my elder sister's family, my grandma and aunt",
+
+    "Taking an opportunity to take a picture together with an expensive & high quality camera since we always take our pictures with our phone",
+
+    "Bothering my dad while he is having his breakfast, heh.",
+
+    "My gen alpha nephews and niece aura farming their swag #67",
+
+    "That one time where mom surprised me by buying my toy I always had my eye on! I went home with full of joy.",
+
+    "My goofy second sister who recently gained freedom from her degree."
+
+];
+
+function openLightbox(index){
+
+    currentImage = index;
+
+    document.getElementById("lightbox").style.display = "block";
+
+    document.getElementById("lightbox-img").src =
+    images[currentImage];
+
+    document.getElementById("caption").innerHTML =
+    captions[currentImage];
+}
+
+function closeLightbox(){
+
+    document.getElementById("lightbox").style.display = "none";
+}
+
+function changeSlide(step){
+
+    currentImage += step;
+
+    if(currentImage > images.length - 1){
+        currentImage = 0;
+    }
+
+    if(currentImage < 0){
+        currentImage = images.length - 1;
+    }
+
+    document.getElementById("lightbox-img").src =
+    images[currentImage];
+
+    document.getElementById("caption").innerHTML =
+    captions[currentImage];
+}
+
+</script>
+
+<script>
+
+let heartInterval =
+setInterval(createHeart,500);
+
+setTimeout(()=>{
+    clearInterval(heartInterval);
+},8000);
+
+function createHeart(){
+
+    const heart =
+    document.createElement("div");
+
+    heart.classList.add("heart");
+
+    heart.innerHTML = ["💖","💕","💗","💞"]
+    [Math.floor(Math.random()*4)];
+
+    heart.style.left =
+    Math.random()*window.innerWidth + "px";
+
+    heart.style.animationDuration =
+    (4 + Math.random()*3) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },7000);
+}
+
+</script>
+
+<footer>
+© 2026   Farisha's Digital Space | IML Project 
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>Farisha's Digital Space</title>
+
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+<div class="page-wrapper">
+
+<div class="sidebar">
+
+    <h3>✦ Navigate ✦</h3>
+
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">🌸 Bits of Me</a>
+    <a href="education.html">🎓 Education</a>
+    <a href="experience.html">🎀 Experience</a>
+    <a href="family.html">👨‍👩‍👧 Family</a>
+    <a href="enthusiast.html">🧸 Enthusiast</a>
+    <a href="gallery.html">💌 Galeria</a>
+
+<br>
+<div class="musicbox"> 
+
+    <h4>𝄞⨾𓍢ִ໋</h4>
+
+    <p class="music-note">
+        ✨ Click ▶ for a welcome song! ✨
+    </p>
+
+    <audio controls>
+        <source src="audio/ILLIT.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+<div class="photocard">
+
+    <img src="image/thatsme.jpg">
+
+    <p>♡ That's me ♡</p>
+
+</div>
+
+<div class="clockbox">
+
+    <h4>⏰ Current Time</h4>
+
+    <div id="clock"></div>
+
+</div>
+
+<div class="minislider">
+
+    <img src="image/sua1.png" class="mini">
+
+    <img src="image/sua2.png" class="mini">
+
+    <img src="image/sua3.png" class="mini">
+
+</div>
+
+</div> <!-- end sidebar -->
+
+<div class="main-content">
+
+<div class="lacester">
+<img src="video/bunny.gif" class="cornergif">
+
+<div class="header">
+</div> <!-- end lacester -->
+
+        <a href="index.html">
+    <img src="image/logoeraser.png"
+         class="logo"
+         alt="Website Logo">
+</a>
+
+    <img src="image/banner.png" class="banner" alt="Website Banner">
+
+<p id="welcome"></p>
+
+<div class="intro-box">
+    <p> From this website, you will get to know more about the creator.</p>
+        <p>Feel free to explore about her by using the "Navigate" bar!</p>
+</div>
+
+<div class="section-divider">
+౨ৎ⋆ ✦︎ ✧˖°.┊ ˚₊‧꒰ა ♡── .✦ ₊˚ ‿︵‿︵‿︵୨୧ · · ♡ · · ୨୧‿︵‿︵‿︵ ˚₊ .✦ ── ♡ ໒꒱ ‧₊˚ ┊✧˖°. ✦︎ ౨ৎ⋆ 
+</div>
+
+<div class="homeslider">
+
+    <img src="image/home1.png" class="slide active">
+    <img src="image/home2.png" class="slide">
+    <img src="image/home3.png" class="slide">
+
+    <button class="prev" onclick="changeSlide(-1)">⬅</button>
+    <button class="next" onclick="changeSlide(1)">➡</button>
+
+</div>
+
+<div class="section-divider">
+┊ ˚₊‧꒰ა ♡── .✦ ₊˚ ‿︵‿︵‿︵୨୧ · · ♡ · · ୨୧‿︵‿︵‿︵ ˚₊ .✦ ── ♡ ໒꒱ ‧₊˚ ┊
+</div>
+
+<div class="video-box">
+    <video controls>
+        <source src="video/homev.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div class="section-divider">
+౨ৎ⋆ ✦︎ ✧˖°.┊ ˚₊‧꒰ა ♡── .✦ ₊˚ ‿︵‿︵‿︵୨୧ · · ♡ · · ୨୧‿︵‿︵‿︵ ˚₊ .✦ ── ♡ ໒꒱ ‧₊˚ ┊✧˖°. ✦︎ ౨ৎ⋆ 
+</div>
+
+<button id="quoteBtn" onclick="showQuote()">
+🌷 Reveal Today's Quote 🌷
+</button>
+<p id="quote"></p>
+
+<script>
+setInterval(() => {
+
+    let petal = document.createElement("div");
+    petal.innerHTML = "🌸";
+
+    petal.style.position = "fixed";
+    petal.style.left = Math.random() * window.innerWidth + "px";
+    petal.style.top = "-20px";
+    petal.style.fontSize = "25px";
+
+    document.body.appendChild(petal);
+
+    let pos = -20;
+
+    let fall = setInterval(() => {
+        pos += 3;
+        petal.style.top = pos + "px";
+
+        if(pos > window.innerHeight){
+            clearInterval(fall);
+            petal.remove();
+        }
+
+    }, 20);
+
+}, 1000);
+
+</script>
+
+<script>
+
+const quotes = [
+    "🌸  A dropout will beat a genius through hard work. - Rock Lee.",
+    "💖 Mistakes are not shackles that halt one from stepping forward. Rather, they are that which sustain and grow one’s heart - Mavis Vermillion.",
+    "✨ How can you move forward if you keep regretting the past? - Edward Elric.",
+    "👊🏻 Hey Villain, have you ever heard these words? Go Beyond! Plus...Ultra...! - All Might",
+    "🪽 Because people don't have wings, they look for ways to fly. - Ukai Keishin"
+];
+
+function showQuote(){
+
+    let random =
+        Math.floor(Math.random() * quotes.length);
+
+    let quoteBox =
+        document.getElementById("quote");
+
+    quoteBox.innerHTML = quotes[random];
+
+    quoteBox.style.display = "block";
+}
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    function updateClock() {
+        const now = new Date();
+        document.getElementById("clock").innerHTML = now.toLocaleTimeString();
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+
+});
+
+</script>
+
+<script>
+
+const text = "Hello dear visitor! Welcome to the digital space.💖";
+let i = 0;
+
+function typeWriter(){
+    if(i < text.length){
+        document.getElementById("welcome").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+    }
+}
+
+typeWriter();
+
+</script>
+
+<script>
+
+let slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
+
+function showSlide(index){
+
+    slides.forEach(slide=>{
+        slide.classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+}
+
+function changeSlide(direction){
+
+    currentSlide += direction;
+
+    if(currentSlide < 0){
+        currentSlide = slides.length - 1;
+    }
+
+    if(currentSlide >= slides.length){
+        currentSlide = 0;
+    }
+
+    showSlide(currentSlide);
+}
+
+function showNextSlide(){
+
+    currentSlide++;
+
+    if(currentSlide >= slides.length){
+        currentSlide = 0;
+    }
+
+    showSlide(currentSlide);
+}
+
+setInterval(showNextSlide, 3000);
+
+
+</script>
+
+<!-- DISCLAIMER -->
+<footer>
+
+© 2026   Farisha's Digital Space | IML Project 
+
+</footer>
+</div>
+
+</body>
+</html>

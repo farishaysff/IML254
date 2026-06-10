@@ -1,0 +1,206 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+     <title>My Experience</title>
+
+<!-- Cute Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/experience.css">
+
+
+</head>
+
+<body>
+<div class="page-wrapper">
+
+<div class="sidebar">
+
+    <h3>✦ Navigate ✦</h3>
+
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">🌸 Bits of Me</a>
+    <a href="education.html">🎓 Education</a>
+    <a href="experience.html">🎀 Experience</a>
+    <a href="family.html">👨‍👩‍👧 Family</a>
+    <a href="enthusiast.html">🧸 Enthusiast</a>
+    <a href="gallery.html">💌 Galeria</a>
+
+<img src="video/chiikawa.gif" class="gif1">
+<img src="video/usagi.gif" class="gif2">
+<img src="video/momonga.gif" class="gif3">
+<img src="video/usagi2.gif" class="gif4">
+
+</div>
+
+<div class="lacester">
+
+    <img src="video/bunny.gif" class="cornergif">
+
+    <div class="header">
+
+    <a href="index.html">
+    <img src="image/logoeraser.png" class="logo"> </a>
+
+     <h1> ｡ﾟ•┈୨ My Experience🎀 ♡୧┈• ｡</h1>
+
+<div class="factbox">
+
+<div class="flip-card">
+
+    <div class="flip-card-inner">
+
+        <!-- FRONT -->
+        <div class="flip-card-front">
+
+    <h2>🎺 MGSS Kuantan Brass Band 🎺</h2>
+
+    <img src="image/mgssband.jpg" class="bandpic">
+    
+<p class="flipnote">
+ ♡ Hover to Flip 
+</p>
+
+ </div>
+
+        <!-- BACK -->
+        <div class="flip-card-back">
+
+    <p>
+        This is where "Marching Band" was introduced to me. I didn't choose to be here, in fact I, myself have no clue what marching band was. Somehow fate has led me here. It was grueling at first, but time after time, I had a lot of fun and unlocked a new talent within me, perhaps those draining times were worth it after all (๑ᵔ⤙ᵔ๑). At first, I'm in the Colourguard section, but then I switched section to Clarinet. The displayed picture was taken during 2022 Merdeka celebration parade, we won the first place (˶ˆᗜˆ˵).</p>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="musicdivider">
+₊˚ ‿︵‿︵‿︵୨୧ · · ♫⋆｡♪₊˚♬゚。 · · ୨୧‿︵‿︵‿︵ ˚₊
+</div>
+
+<div class="flip-card">
+
+    <div class="flip-card-inner">
+
+<div class="flip-card-front">
+
+<h2>🦅 De Falcon Brass Band 🦅</h2>
+
+    <div class="experienceslider">
+
+        <img src="image/df1.jpg" class="slidepic">
+
+        <img src="image/df2.jpg" class="slidepic">
+
+        <img src="image/df3.jpg" class="slidepic">
+
+        <img src="image/df4.jpg" class="slidepic">
+
+    </div>
+
+<p class="flipnote">
+♡ Hover to Flip ♡
+</p>
+
+</div>
+
+<div class="flip-card-back">
+   
+    <p>
+        I was delighted when I knew almost every UiTM have marching band club since the school that I moved during form 4 didn't have any music related club. I was able to play clarinet again, and I learned a new instrument which is tenor drum! Rhythming the drums and controlling the stick is not simple as you think, it takes a lot of time and patience to perfectly ace it. Although the tenor drum weighs around 10+ kg, when you get used to it, it's not that bad. (˶˃𐃷˂˶). </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<h3 class="socialtitle">📱 Check out De Falcon! </h3>
+
+<div class="socials">
+
+<a href="https://www.instagram.com/marchingbanduitmkedah?igsh=MWR1YXdxaTRtd3dvcQ=="
+target="_blank">
+.𖥔 ݁ ˖๋ ࣭ ⭑ Instagram
+</a>
+
+<a href="https://www.tiktok.com/@defalconuitmkedah?_r=1&_t=ZS-974YwzE7jBk"
+target="_blank">
+⋆˚꩜｡ TikTok
+</a>
+
+</div>
+
+<div class="factbox">
+
+<h2>🎶 My Marching Band Memory 🎶</h2>
+    <video controls width="100%">
+
+        <source src="video/brassband.mp4" type="video/mp4">
+
+    </video>
+
+</div>
+
+<button class="likebtn" onclick="react()">
+    💖 Like My Experience 💖
+</button>
+
+<p id="reaction">💗 Likes: 0</p>
+
+<script>
+let likes = 0;
+
+function react(){
+
+    likes++;
+
+    document.getElementById("reaction").innerHTML =
+    "💗 Likes: " + likes;
+
+    let heart = document.createElement("div");
+
+    heart.innerHTML = "💖";
+
+    heart.style.position = "fixed";
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.top = "80%";
+    heart.style.fontSize = "30px";
+    heart.style.zIndex = "9999";
+
+    document.body.appendChild(heart);
+
+    heart.animate(
+    [
+        {transform:"translateY(0)",opacity:1},
+        {transform:"translateY(-200px)",opacity:0}
+    ],
+    {
+        duration:2000
+    });
+
+    setTimeout(()=>{
+        heart.remove();
+    },2000);
+
+}
+</script>
+
+<footer>
+© 2026  Farisha's Digital Space | IML Project
+</footer>
+
+</div> <!-- lacester -->
+
+</body>
+</html>
+
+
