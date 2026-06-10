@@ -100,8 +100,7 @@ button{
 
     padding:10px;
 
-    /* move it left with small gap */
-    margin:0 0 0 20px;
+    /* 
 
     background:url('../image/bluepolkadot.jpg');
     background-size:200px;
@@ -120,6 +119,15 @@ button{
     gap:30px;
 }
 
+.page-wrapper{
+    display:flex;
+    justify-content:flex-start;
+    gap:20px;
+}
+
+.lacester{
+    margin-left:10px;
+}
 
 /* =========================================
    4. HEADER
@@ -365,7 +373,8 @@ body{
 .page-wrapper{
     display:flex;
     align-items:flex-start;
-    gap:50px;
+    justify-content:flex-start;
+    gap:20px;
 }
 
 footer{
