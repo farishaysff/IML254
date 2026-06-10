@@ -106,7 +106,7 @@ button{
     background-size:200px;
 
     border:37px solid transparent;
-    border-image:url('../image/laceborder.png') 15 fill round;
+    border-image:url('../image/laceborder.png') 13 fill round;
     border-image-outset:0;
 
     filter:drop-shadow(4px 4px 6px rgba(0,0,0,0.4));
