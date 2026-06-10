@@ -113,6 +113,13 @@ button{
     filter:drop-shadow(4px 4px 6px rgba(0,0,0,0.4));
 }
 
+.page-wrapper{
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap:30px;
+}
+
 
 /* =========================================
    4. HEADER
