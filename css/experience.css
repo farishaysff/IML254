@@ -100,7 +100,7 @@ button{
     min-height:981px;
 
     padding:10px;
-    margin:0 auto;
+    margin:0;
 
     background:url('../image/bluepolkadot.jpg');
     background-size:200px;
