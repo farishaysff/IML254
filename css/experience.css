@@ -99,9 +99,7 @@ button{
     min-height:981px;
 
     padding:10px;
-
-    /* 
-
+    
     background:url('../image/bluepolkadot.jpg');
     background-size:200px;
 
@@ -223,7 +221,7 @@ button{
 }
 
 .bandpic{
-    cursor:url('cursor/button.cur'), pointer;
+    cursor:url('.../cursor/button.cur'), pointer;
     transition:0.3s;
 }
 
@@ -404,7 +402,7 @@ footer{
     border-radius:30px;
 
     padding:15px 25px;
-    cursor:url('cursor/button.cur'), pointer;
+    cursor:url('../cursor/button.cur'), pointer;
 
     display:block;
     margin:20px auto;
