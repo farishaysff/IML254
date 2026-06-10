@@ -2,6 +2,10 @@ body{
     margin:0;
     padding:20px;
 
+    display:flex;
+    align-items:flex-start;
+    gap:50px;
+
     font-family:'Comfortaa', sans-serif;
 
     background:url('../image/background.jpg');
@@ -16,12 +20,6 @@ a{
 
 button{
     cursor:url('../cursor/button.cur'), pointer;
-}
-
-.page-wrapper{
-    display:flex;
-    align-items:flex-start;
-    gap:25px;
 }
 
 /* =========================================
@@ -225,7 +223,7 @@ button{
 }
 
 .bandpic{
-    cursor:url('../cursor/button.cur'), pointer;
+    cursor:url('cursor/button.cur'), pointer;
     transition:0.3s;
 }
 
@@ -369,8 +367,7 @@ body{
 .page-wrapper{
     display:flex;
     align-items:flex-start;
-    justify-content:flex-start;
-    gap:20px;
+    gap:50px;
 }
 
 footer{
@@ -407,7 +404,7 @@ footer{
     border-radius:30px;
 
     padding:15px 25px;
-    cursor:url('../cursor/button.cur'), pointer;
+    cursor:url('cursor/button.cur'), pointer;
 
     display:block;
     margin:20px auto;
