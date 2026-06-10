@@ -4,7 +4,7 @@ body{
 
     display:flex;
     align-items:flex-start;
-    gap:7px;
+    gap:20px;
 
     font-family:'Comfortaa', sans-serif;
 
@@ -208,7 +208,7 @@ button{
 }
 
 .bandpic{
-    cursor:url('cursor/button.cur'), pointer;
+    cursor:url('../cursor/button.cur'), pointer;
     transition:0.3s;
 }
 
@@ -340,7 +340,7 @@ video{
 .page-wrapper{
     display:flex;
     align-items:flex-start;
-    gap:50px;
+    gap:20px;
 }
 
 footer{
