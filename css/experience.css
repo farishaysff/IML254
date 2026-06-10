@@ -12,10 +12,16 @@ button{
 
 body{
     margin:0;
+    padding:20px;
+
+    display:flex;
+    align-items:flex-start;
+    gap:22px;
+
     font-family:'Comfortaa', sans-serif;
+
     background:url('../image/background.jpg');
     background-size:400px;
-    padding:20px;
 }
 
 .sidebar{
