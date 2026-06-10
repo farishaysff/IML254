@@ -2,10 +2,6 @@ body{
     margin:0;
     padding:20px;
 
-    display:flex;
-    align-items:flex-start;
-    gap:50px;
-
     font-family:'Comfortaa', sans-serif;
 
     background:url('../image/background.jpg');
@@ -20,6 +16,12 @@ a{
 
 button{
     cursor:url('../cursor/button.cur'), pointer;
+}
+
+.page-wrapper{
+    display:flex;
+    align-items:flex-start;
+    gap:25px;
 }
 
 /* =========================================
