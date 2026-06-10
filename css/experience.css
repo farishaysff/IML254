@@ -105,7 +105,7 @@ button{
     background:url('../image/bluepolkadot.jpg');
     background-size:200px;
 
-    border:37px solid transparent;
+    border:35px solid transparent;
     border-image:url('../image/laceborder.png') 13 fill round;
     border-image-outset:17px;
 
