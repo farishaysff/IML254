@@ -1,7 +1,7 @@
 body{
     margin:0;
     font-family:'Comfortaa', sans-serif;
-    background:url('.../image/background.jpg');
+    background:url('../image/background.jpg');
     background-size:400px;
     padding:20px;
 }
