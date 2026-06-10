@@ -4,7 +4,7 @@ body{
 
     display:flex;
     align-items:flex-start;
-    gap:5px;
+    gap:30px;
 
     font-family:'Comfortaa', sans-serif;
 
@@ -33,7 +33,7 @@ button{
     border-radius:20px;
     padding:12px;
 
-    margin:15px 5px 15px 15px;
+    margin:15px 40px 15px 15px;
 
     box-shadow:0 4px 8px rgba(0,0,0,0.1);
     height:fit-content;
@@ -100,7 +100,7 @@ button{
     min-height:981px;
 
     padding:10px;
-    margin:0;
+    margin:0 auto;
 
     background:url('../image/bluepolkadot.jpg');
     background-size:200px;
